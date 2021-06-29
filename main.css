@@ -1,0 +1,597 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url(fonts/aleo-regular-webfont.ttf);
+}
+
+body {
+  background: #fff;
+}
+
+.wrapper--1 {
+  margin: 15px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header {
+  background-image: url(img/bg-1.png);
+  max-width: 1770px;
+  height: 820px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.header__text--top {
+  font-size: 48px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+  font-family: "Aleo";
+}
+
+.header__text--middle {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.31em;
+  padding-bottom: 50px;
+}
+
+.header__text--bottom {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #fff;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__text--bottom:visited {
+  color: #fff;
+}
+
+.header__text--bottom > svg {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.header__text--bottom > p:hover {
+  color: #5474fd;
+}
+
+.form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 650px;
+  height: 60px;
+  background-color: #fff;
+  margin-bottom: 120px;
+}
+
+.form__input {
+  width: 77%;
+  border: 0;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #999999;
+  margin-top: 20px;
+  padding-left: 120px;
+}
+
+.form__button {
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+  border: 2px solid #fff;
+  background: #5474fd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__button:hover {
+  background-color: #3158ff;
+}
+
+.form__button > p {
+  font-family: "Aleo";
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding-top: 18px;
+  padding-left: 28px;
+}
+
+.form__button > svg {
+  margin-right: 8px;
+}
+
+.nav {
+  background: #5474fd;
+  height: 80px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__text {
+  margin-top: 20px;
+}
+
+.nav__text--big {
+  margin-left: 33px;
+  margin-right: 430px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.nav__text--small {
+  margin-left: 40px;
+  font-family: "Aleo";
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.nav > a {
+  text-decoration: none;
+}
+
+.why {
+  background-image: url(img/bg-2.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.why-left {
+  color: #fff;
+  margin-top: 200px;
+  margin-left: 330px;
+  margin-right: 107px;
+}
+
+.why-left__text--top {
+  font-family: "Aleo";
+  font-size: 36px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 70px;
+}
+
+.why-left__text--middle {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #e8e8e8;
+  margin-bottom: 40px;
+  max-width: 530px;
+}
+
+.why-left__text--bottom {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #e8e8e8;
+  margin-bottom: 50px;
+  max-width: 530px;
+}
+
+.why-right {
+  margin-top: 120px;
+  max-width: 475px;
+  position: relative;
+}
+
+.why-right__img--second {
+  top: 225px;
+  left: 125px;
+  position: absolute;
+}
+
+.button {
+  font-family: "Aleo";
+  width: 225px;
+  height: 60px;
+  background-color: #5474fd;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button--why {
+  margin-bottom: 88px;
+}
+
+.bug-1 {
+  font-size: 0;
+}
+
+.instruction {
+  max-height: 337px;
+}
+
+.instruction__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.booking {
+  height: 700px;
+}
+
+.booking--1 {
+  background-image: url(img/bg-4.png);
+  position: relative;
+}
+
+.booking--2 {
+  background-image: url(img/bg-5.png);
+  position: relative;
+}
+
+.card {
+  width: 540px;
+  height: 371px;
+  opacity: 0.9;
+  background-color: #232323;
+  top: 230px;
+}
+
+.card--1 {
+  position: absolute;
+  left: 20vw;
+}
+
+.card--2 {
+  position: absolute;
+  left: 50vw;
+}
+
+.card__text--top {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  color: #e8e8e8;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.card__text--middle {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.card__text--bottom {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #e8e8e8;
+  margin-bottom: 50px;
+}
+
+.wrapper--2 {
+  margin-left: 30px;
+}
+
+.review {
+  background-image: url(img/bg-6.png);
+  height: 731px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review__text {
+  font-family: "Aleo";
+  font-size: 36px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.sams-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sams-review-text {
+  max-width: 665px;
+  height: 284px;
+  background-color: #333333;
+}
+
+.sams-review-text__text {
+  margin-left: 60px;
+}
+
+.sams-review-text__text--top {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fefefe;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.sams-review-text__text--bottom {
+  font-weight: 400;
+  color: #5474fd;
+  font-size: 16px;
+  color: #e8e8e8;
+  line-height: 26px;
+}
+
+.fa-quote-left {
+  color: #5474fd;
+}
+
+.footer {
+  height: 268px;
+  background-color: #232323;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__text--top {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+}
+
+.footer__text--middle {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.footer__text--bottom {
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  display: block;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links__link {
+  margin: 13.79px;
+  color: #e8e8e8;
+}
+
+.links__link:hover {
+  color: #5474fd;
+}
+
+.top {
+  margin-top: 20px;
+}
+
+.love {
+  color: red;
+}
+
+@media screen and (max-width: 1475px) {
+  .why-right__img--second {
+    left: 0;
+  }
+  .nav__text--big {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .booking {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card {
+    position: static;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .why-left {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sams-review-text__text--top {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sams-review {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .review {
+    height: content;
+  }
+  .form {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .nav__text--big {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .nav__text--small {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .why {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: content;
+  }
+}

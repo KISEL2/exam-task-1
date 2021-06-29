@@ -66,6 +66,7 @@ body {
 
 .header {
   background-image: url(img/bg-1.png);
+  background-repeat: no-repeat;
   max-width: 1770px;
   height: 820px;
   display: -webkit-box;
